@@ -1,6 +1,3 @@
 python-dotenv
-
 pymongo
-datetime
 imapclient
-logging
