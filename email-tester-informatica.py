@@ -31,6 +31,7 @@ KEYWORDS = ["consulta", "pregunta", "duda", "ayuda", "información", "asistencia
 
 def connect_to_email():
     try:
+        # Remove the custom SSL context to allow imaplib to use default settings
         mail = imaplib.IMAP4_SSL(IMAP_SERVER, IMAP_PORT)
         mail.login(EMAIL, PASSWORD)
         logging.info("Connected to the email server successfully.")
